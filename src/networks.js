@@ -33,5 +33,16 @@ module.exports = {
     pubKeyHash: 0x30,
     scriptHash: 0x32,
     wif: 0xb0
-  }
+  },
+  twist: {
+    messagePrefix: '\x18Twist Signed Message:\n',
+    bech32: 'bc',
+    bip32: {
+      public: 0x0488b2dd,
+      private: 0x0488c21e
+    },
+    pubKeyHash: 0x00,
+    scriptHash: 0x7D,
+    wif: 0xBF
+  },
 }
